@@ -1,2 +1,46 @@
+:root {
+  --font-color: rgb(168, 218, 220);
+  --border-color: rgb(255, 214, 186)
+; }
+
 body {
-  background: lightblue; }
+  background: #1d3557; }
+
+main {
+  width: 55vw;
+  display: flex;
+  margin: 15px auto;
+  flex-direction: column; }
+
+.box {
+  display: block;
+  margin: 15px auto;
+  width: 250px; }
+
+h1 {
+  color: var(--font-color);
+  font-size: 32px; }
+
+textarea {
+  border: 7px solid #ffd6ba;
+  border-radius: 25px;
+  color: var(--font-color);
+  height: 200px;
+  padding: 15px 15px;
+  background-color: whitesmoke; }
+
+.button_box {
+  display: flex;
+  justify-content: flex-end; }
+
+button {
+  border: 7px solid #ffd6ba;
+  border-radius: 25px;
+  background: #89b0ae;
+  color: var(--font-color);
+  width: 100px;
+  height: 30px;
+  margin: 0px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: inset 0px 0px 15px 3px #ffd6ba; }

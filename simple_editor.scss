@@ -1,3 +1,57 @@
-body{
-    background: lightblue;
+:root {
+  --font-color: rgb(168, 218, 220);
+  --border-color: rgb(255, 214, 186)
+}
+
+@mixin border_template {
+  border: 7px solid rgb(255, 214, 186);
+  border-radius: 25px;
+}
+body {
+  background: rgb(29, 53, 87);
+}
+
+main {
+  width: 55vw;
+  display: flex;
+  margin: 15px auto;
+  flex-direction: column;
+}
+.box {
+  display: block;
+  // display: flex;
+  // justify-content: center;
+  margin: 15px auto;
+  width: 250px;
+}
+
+h1 {
+  color: var(--font-color);
+  font-size: 32px;
+}
+
+textarea {
+  @include border_template;
+  color: var(--font-color);
+  height: 200px;
+  padding: 15px 15px;
+  background-color: whitesmoke ;
+}
+
+.button_box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  @include border_template;
+  background: rgb(137, 176, 174);
+  color: var(--font-color);
+  width: 100px;
+  height: 30px;
+  margin: 0px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: inset 0px 0px 15px 3px rgb(255, 214, 186);
+  
 }
