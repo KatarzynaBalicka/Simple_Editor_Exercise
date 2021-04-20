@@ -9,6 +9,7 @@
   },
   "devDependencies": {},
   "scripts": {
+    "sass-css": "npx node-sass simple_editor.scss simple_editor.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
