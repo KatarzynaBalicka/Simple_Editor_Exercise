@@ -1,0 +1,25 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "\"# Simple_Editor_Exercise\"",
+  "main": "simple_editor.js",
+  "dependencies": {
+    "node-sass": "^5.0.0",
+    "webpack": "^5.34.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass-css": "npx node-sass simple_editor.scss simple_editor.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KatarzynaBalicka/Simple_Editor_Exercise.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KatarzynaBalicka/Simple_Editor_Exercise/issues"
+  },
+  "homepage": "https://github.com/KatarzynaBalicka/Simple_Editor_Exercise#readme"
+}
