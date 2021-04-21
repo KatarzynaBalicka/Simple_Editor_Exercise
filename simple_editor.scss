@@ -1,41 +1,63 @@
 :root {
-  --font-color: rgb(168, 218, 220);
-  --border-color: rgb(255, 214, 186)
+  --font-color: #1d3557;
+  --border-color: #6c7fa7;
 }
 
-@mixin border_template {
-  border: 7px solid rgb(255, 214, 186);
-  border-radius: 25px;
-}
 body {
-  background: rgb(29, 53, 87);
+  background: #c0d3fe;
 }
 
 main {
   width: 55vw;
   display: flex;
-  margin: 15px auto;
+  margin: 77px auto;
   flex-direction: column;
-}
-.box {
-  display: block;
-  // display: flex;
-  // justify-content: center;
-  margin: 15px auto;
-  width: 250px;
 }
 
 h1 {
+  display: inline;
+  width: 200px;
+  transform: rotate(-15deg);
   color: var(--font-color);
   font-size: 32px;
+  &::before {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color:red;
+  }
+}
+
+.box{
+  height: 200px;
+  width: 200px;
+  &::before {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color:red;
+  }
 }
 
 textarea {
-  @include border_template;
+  border: 5px solid #6c7fa7;
+  border-radius: 21px;
   color: var(--font-color);
   height: 200px;
   padding: 15px 15px;
-  background-color: whitesmoke ;
+  background-color: whitesmoke;
+  &::before {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color:red;
+  }
 }
 
 .button_box {
@@ -44,14 +66,14 @@ textarea {
 }
 
 button {
-  @include border_template;
-  background: rgb(137, 176, 174);
+  transform: rotate(-15deg);
+  border: 5px solid #6c7fa7;
+  border-radius: 21px;
+  background: #6c7fa7;
   color: var(--font-color);
   width: 100px;
   height: 30px;
-  margin: 0px 15px;
+  margin: 15px 15px;
   font-size: 1rem;
   font-weight: bold;
-  box-shadow: inset 0px 0px 15px 3px rgb(255, 214, 186);
-  
 }

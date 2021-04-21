@@ -8,15 +8,27 @@
     <link href="simple_editor.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="box">BOX</div>
-    <br />
     <main>
       <h1>Simple Editor</h1>
-      <textarea name="js-textarea" placeholder="Input your new value ..."></textarea><br />
+      <textarea
+        name="js-textarea"
+        placeholder="Input your new value ..."
+      ></textarea
+      ><br />
       <div class="button_box">
         <button class="load" type="submit" value="load">Load</button>
         <button class="save" type="submit" value="save">Save</button>
       </div>
+      <div class="box">BOX1</div>
+
+      <h1>Species</h1>
+<p>Click on a species to see what type it is:</p>
+
+<ul>
+  <li onclick="showDetails(this)" id="owl" data-animal-type="bird">Owl</li>
+  <li onclick="showDetails(this)" id="salmon" data-animal-type="fish">Salmon</li>  
+  <li onclick="showDetails(this)" id="tarantula" data-animal-type="spider">Tarantula</li>  
+</ul>
     </main>
     <script src="simple_editor.js"></script>
   </body>
